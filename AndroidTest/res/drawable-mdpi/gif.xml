@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kitty.mywidget.widget.MyGif xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mg"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    drawable0="@drawable/loading_1"
+    drawable1="@drawable/loading_2"
+    drawable2="@drawable/loading_3"
+    drawable3="@drawable/loading_4"
+    drawable4="@drawable/loading_5"
+    drawable5="@drawable/loading_6"
+    drawable6="@drawable/loading_7"
+    drawable7="@drawable/loading_8"
+    drawable_height="100"
+    drawable_num="8"
+    drawable_width="100"
+    interval_millis="200" />
