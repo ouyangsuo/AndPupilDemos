@@ -3,4 +3,5 @@ this is an android application with some demos for learning, keeps increasing, i
 2. load bitmaps asynchronously;
 3. the usage of viewpager;
 4. the usage of the famous navigation library sliding_menu;
-5. and more...
+5. the usage of the famous widget library drag_sort_listview;
+6. and more...

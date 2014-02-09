@@ -17,13 +17,17 @@ public class MainActivity extends Activity{
 
 	private Context context;
 	private ListView lvMain;
-	private String[] demos=new String[]{"查看设备分辨率","异步加载图片","使用ViewPager","使用第三方类库：SlidingMenu","使用第三方类库：XXX"};
+//	private String[] demos=new String[]{"查看设备分辨率","异步加载图片","使用ViewPager","使用第三方类库：SlidingMenu","使用第三方类库：XXX"};
+	private String[] demoNames;
+	private String[] demoDescs;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		context=this;
+		demoNames=getResources().getStringArray(R.array.demo_names);
+		demoDescs=getResources().getStringArray(R.array.demo_descs);
 		
 		setContentView(R.layout.main);
 		initComponent();
@@ -41,24 +45,24 @@ public class MainActivity extends Activity{
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-				if("查看设备分辨率".equals(demos[position])){
+				if("查看设备分辨率".equals(demoNames[position])){
 					context.startActivity(new Intent(context, GetResolutionActivity.class));
 				}
 				
-				else if("异步加载图片".equals(demos[position])){
+				else if("异步加载图片".equals(demoNames[position])){
 					context.startActivity(new Intent(context, ThreadTestActivity.class));
 				}
 				
-				else if("使用ViewPager".equals(demos[position])){
+				else if("使用ViewPager".equals(demoNames[position])){
 					context.startActivity(new Intent(context, WeiBoActivity.class));
 				}
 				
-				else if("使用第三方类库：SlidingMenu".equals(demos[position])){
+				else if("使用第三方类库：SlidingMenu".equals(demoNames[position])){
 					context.startActivity(new Intent(context, FragmentChangeActivity.class));
 				}
 				
-				else if("使用第三方类库：XXX".equals(demos[position])){
-//					context.startActivity(new Intent(context, FragmentChangeActivity.class));
+				else if("使用第三方类库：DragSortListView".equals(demoNames[position])){
+					context.startActivity(new Intent(context, TestBedDSLV.class));
 				}
 				
 			}
@@ -70,7 +74,7 @@ public class MainActivity extends Activity{
 		@Override
 		public int getCount() {
 			// TODO Auto-generated method stub
-			return demos.length;
+			return demoNames.length;
 		}
 
 		@Override
@@ -97,7 +101,8 @@ public class MainActivity extends Activity{
 				holder = (Holder) convertView.getTag();
 			}
 
-			holder.tvName.setText(demos[position]);
+			holder.tvName.setText(demoNames[position]);
+			holder.tvDesc.setText(demoDescs[position]);
 
 			return convertView;
 		}
@@ -106,9 +111,11 @@ public class MainActivity extends Activity{
 	
 	class Holder {
 		private TextView tvName;
+		private TextView tvDesc;
 
 		public Holder(View convertView) {
 			tvName = (TextView) convertView.findViewById(R.id.tv_name);
+			tvDesc = (TextView) convertView.findViewById(R.id.tv_desc);
 		}
 	}
 	

@@ -48,4 +48,21 @@
         <item>Turkey</item>
         <item>Vulture</item>
     </string-array>
+    
+    <string-array name="demo_names">
+        <item>查看设备分辨率</item>
+        <item>异步加载图片</item>
+        <item>使用ViewPager</item>
+        <item>使用第三方类库：SlidingMenu</item>
+        <item>使用第三方类库：DragSortListView</item>
+    </string-array>
+    
+    <string-array name="demo_descs">
+        <item>查看当前移动设备的分辨率</item>
+        <item>分别使用新起线程、构建异步任务、从线程池拿取线程实现图片异步加载</item>
+        <item>原生的翻页效果</item>
+        <item>经典的导航类库，本例实现了侧滑菜单和翻页导航</item>
+        <item>牛逼的ListView升级版，实现了item的拖动排序和移除，并内置了多种配置选项</item>
+    </string-array>
+    
 </resources>

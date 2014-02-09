@@ -7,10 +7,20 @@
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/lvmain_item_height" 
+        android:layout_height="@dimen/lvmain_item_height_top" 
         android:gravity="center_vertical"
         android:paddingLeft="15dp"
         android:textSize="30sp"
         android:text="hello"/>
+    
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lvmain_item_height_bottom" 
+        android:gravity="top"
+        android:paddingLeft="15dp"
+        android:paddingTop="0dp"
+        android:textSize="15sp"
+        android:text="hellohellohellohellohellohellohellohello"/>
 
 </LinearLayout>

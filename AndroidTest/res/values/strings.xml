@@ -69,5 +69,53 @@
 		either express or implied. See the License for the specific 
 		language governing permissions and limitations under the License.</string>
     <string name="no_email">Sorry, I couldn\'t find any e-mail apps on your phone</string>
+    
+    
+    
+    
+    <!-- sdlv -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_remove_mode">Remove modes</string>
+    <string name="select_drag_init_mode">Start-drag modes</string>
+    <string name="select_enables">Enable/Disable</string>
+    <string name="add_header">Add header</string>
+    <string name="add_footer">Add footer</string>
+    
+        <string-array name="remove_mode_labels">
+      <item>Click remove</item>
+      <item>Fling remove</item>
+    </string-array>
+    
+    <string-array name="drag_init_mode_labels">
+      <item>On down</item>
+      <item>On drag</item>
+      <item>On long press</item>
+    </string-array>
+    
+    <string-array name="enables_labels">
+      <item>Enable drag</item>
+      <item>Enable sort</item>
+      <item>Enable remove</item>
+    </string-array>
+    
+    <string-array name="jazz_artist_names">
+      <item>Brad Mehldau</item>
+      <item>Joshua Redman</item>
+      <item>Chick Corea</item>
+      <item>Kurt Rosenwinkel</item>
+      <item>Miles Davis</item>
+      <item>Wayne Shorter</item>
+      <item>Michael Brecker</item>
+      <item>Herbie Hancock</item>
+      <item>Joe Zawinul</item>
+      <item>Brian Blade</item>
+      <item>Jeff Ballard</item>
+      <item>Larry Grenadier</item>
+      <item>Keith Jarrett</item>
+      <item>McCoy Tyner</item>
+      <item>Stephon Harris</item>
+      <item>Mark Turner</item>
+    </string-array>
 
 </resources>
