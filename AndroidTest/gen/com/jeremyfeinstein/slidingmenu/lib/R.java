@@ -273,7 +273,7 @@ public final class R {
 		public static final int abs__textfield_searchview_right_holo_dark = 0x7f02006e;
 		public static final int abs__textfield_searchview_right_holo_light = 0x7f02006f;
 		public static final int abs__toast_frame = 0x7f020070;
-		public static final int ic_launcher = 0x7f020075;
+		public static final int ic_launcher = 0x7f020077;
 	}
 	public static final class id {
 		public static final int abs__action_bar = 0x7f04002c;
@@ -315,7 +315,7 @@ public final class R {
 		public static final int abs__textButton = 0x7f04001f;
 		public static final int abs__title = 0x7f040027;
 		public static final int abs__up = 0x7f040010;
-		public static final int action_settings = 0x7f040070;
+		public static final int action_settings = 0x7f040079;
 		public static final int disableHome = 0x7f04000e;
 		public static final int edit_query = 0x7f040032;
 		public static final int fullscreen = 0x7f040018;
@@ -329,7 +329,7 @@ public final class R {
 		public static final int showCustom = 0x7f04000d;
 		public static final int showHome = 0x7f04000a;
 		public static final int showTitle = 0x7f04000c;
-		public static final int slidingmenumain = 0x7f040062;
+		public static final int slidingmenumain = 0x7f040067;
 		public static final int tabMode = 0x7f040008;
 		public static final int useLogo = 0x7f040009;
 		public static final int wrap_content = 0x7f040005;
@@ -359,13 +359,13 @@ public final class R {
 		public static final int abs__search_dropdown_item_icons_2line = 0x7f030012;
 		public static final int abs__search_view = 0x7f030013;
 		public static final int abs__simple_dropdown_hint = 0x7f030014;
-		public static final int activity_main = 0x7f030015;
-		public static final int sherlock_spinner_dropdown_item = 0x7f03002b;
-		public static final int sherlock_spinner_item = 0x7f03002c;
-		public static final int slidingmenumain = 0x7f03002d;
+		public static final int activity_main = 0x7f03001a;
+		public static final int sherlock_spinner_dropdown_item = 0x7f030034;
+		public static final int sherlock_spinner_item = 0x7f030035;
+		public static final int slidingmenumain = 0x7f030036;
 	}
 	public static final class menu {
-		public static final int main = 0x7f0c0000;
+		public static final int main = 0x7f0c0001;
 	}
 	public static final class string {
 		public static final int abs__action_bar_home_description = 0x7f090000;

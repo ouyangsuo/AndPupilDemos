@@ -17,7 +17,6 @@ public class MainActivity extends Activity{
 
 	private Context context;
 	private ListView lvMain;
-//	private String[] demos=new String[]{"查看设备分辨率","异步加载图片","使用ViewPager","使用第三方类库：SlidingMenu","使用第三方类库：XXX"};
 	private String[] demoNames;
 	private String[] demoDescs;
 	
@@ -63,6 +62,10 @@ public class MainActivity extends Activity{
 				
 				else if("使用第三方类库：DragSortListView".equals(demoNames[position])){
 					context.startActivity(new Intent(context, TestBedDSLV.class));
+				}
+				
+				else if("使用第三方类库：ImageLoader".equals(demoNames[position])){
+					context.startActivity(new Intent(context, ImageLoaderActivity.class));
 				}
 				
 			}
