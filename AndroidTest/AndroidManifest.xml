@@ -9,6 +9,10 @@
         android:targetSdkVersion="14" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -72,6 +76,12 @@
             android:name="com.kitty.androidtest.imageloaderdemo.ImageGalleryActivity"
             android:label="@string/ac_name_image_gallery" />
         
+        <!-- upnp -->
+        <activity android:name="com.kitty.androidtest.activity.BrowserActivity"/>
+        <activity android:name="com.kitty.androidtest.activity.LightActivity"/>
+        <activity android:name="com.kitty.androidtest.upnpclient.LightControllerActivity"/>
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl"/>
+                
     </application>
 
 </manifest>

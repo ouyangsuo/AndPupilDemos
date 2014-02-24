@@ -68,6 +68,14 @@ public class MainActivity extends Activity{
 					context.startActivity(new Intent(context, ImageLoaderActivity.class));
 				}
 				
+				else if("物联网的开端：UPNP服务端示例".equals(demoNames[position])){
+					context.startActivity(new Intent(context, LightActivity.class));
+				}
+				
+				else if("物联网的开端：UPNP控制端示例".equals(demoNames[position])){
+					context.startActivity(new Intent(context, BrowserActivity.class));
+				}
+				
 			}
 		});
 	}

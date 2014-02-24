@@ -56,6 +56,8 @@
         <item>使用第三方类库：SlidingMenu</item>
         <item>使用第三方类库：DragSortListView</item>
         <item>使用第三方类库：ImageLoader</item>
+        <item>物联网的开端：UPNP服务端示例</item>
+        <item>物联网的开端：UPNP控制端示例</item>
     </string-array>
     
     <string-array name="demo_descs">
@@ -65,6 +67,8 @@
         <item>经典的导航类库，本例实现了侧滑菜单和翻页导航</item>
         <item>牛逼的ListView升级版，实现了item的拖动排序和移除，并内置了多种配置选项</item>
         <item>批量异步加载图片的利器，并可配置淡入淡出效果，令你的各种列表流畅生动，牛逼闪闪</item>
+        <item>服务端发布【小灯泡设备】和【开关服务】，局域网内的其它控制点可以搜索到该设备并控制其开关</item>
+        <item>搜索局域网内实现了UPNP通信接口的设备，并与其实现通信，本例控制灯泡设备的开关</item>
     </string-array>
     
 </resources>
