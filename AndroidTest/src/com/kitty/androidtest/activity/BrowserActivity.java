@@ -61,6 +61,7 @@ public class BrowserActivity extends ListActivity {
 
 	public static AndroidUpnpService upnpService;
 	public static Service switchPowerService;
+	public static Service contentDirectoryService;
 
 	private ServiceConnection serviceConnection = new ServiceConnection() {
 
@@ -198,6 +199,10 @@ public class BrowserActivity extends ListActivity {
 		for (Service service : rootDevice.getServices()) {
 			if (service.getServiceType().getType().equals("SwitchPower")) {
 				switchPowerService = service;
+			}
+			
+			else if (service.getServiceType().getType().equals("ContentDirectory")) {
+				contentDirectoryService = service;
 			}
 		}
 	}

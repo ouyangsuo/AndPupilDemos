@@ -17,6 +17,11 @@ package com.kitty.androidtest.upnpserver;
 
 import org.fourthline.cling.binding.annotations.*;
 
+import com.kitty.androidtest.activity.LightActivity;
+
+import android.content.Intent;
+import android.net.Uri;
+
 import java.beans.PropertyChangeSupport;
 
 // DOC:CLASS
@@ -38,6 +43,9 @@ public class SwitchPower {
 
     @UpnpStateVariable(defaultValue = "0", sendEvents = false)
     private boolean target = false;
+    
+    @UpnpStateVariable(defaultValue = "", sendEvents = false)
+    private String url = "";
 
     @UpnpStateVariable(defaultValue = "0")
     private boolean status = false;
@@ -56,6 +64,27 @@ public class SwitchPower {
         // This will send a UPnP event, it's the name of a state variable that sends events
         getPropertyChangeSupport().firePropertyChange("Status", statusOldValue, status);
     }
+    
+    @UpnpAction
+    public void play(@UpnpInputArgument(name = "Url") String urlNewValue) {
+    	String urlOldValue = url;
+    	url = urlNewValue;
+    	
+    	getPropertyChangeSupport().firePropertyChange("url", urlOldValue, url);
+    	
+    	iPlay(url);
+    }
+    
+	protected void iPlay(String url) {
+		System.out.println("play on server:url="+url);
+		final String myUrl=url;
+		
+		Intent intent = new Intent();
+		Uri uri = Uri.parse(myUrl);
+		intent.setDataAndType(uri, "audio/*");
+		intent.setAction(Intent.ACTION_VIEW);
+		LightActivity.context.startActivity(intent);
+	}
 
     @UpnpAction(out = @UpnpOutputArgument(name = "RetTargetValue"))
     public boolean getTarget() {

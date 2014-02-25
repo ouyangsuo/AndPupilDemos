@@ -6,7 +6,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="lib" path="libs/universal-image-loader-1.8.6-with-sources.jar"/>
-	<classpathentry kind="lib" path="libs/cling-core-2.0-alpha2-sources.jar"/>
 	<classpathentry kind="lib" path="libs/cling-core-2.0-alpha2.jar"/>
 	<classpathentry kind="lib" path="libs/seamless-http-1.0-alpha2.jar"/>
 	<classpathentry kind="lib" path="libs/seamless-util-1.0-alpha2.jar"/>
@@ -21,5 +20,6 @@
 	<classpathentry kind="lib" path="libs/jetty-util-8.1.8.v20121106.jar"/>
 	<classpathentry kind="lib" path="libs/seamless-android-1.0-20130624.163226-7.jar"/>
 	<classpathentry kind="lib" path="libs/jetty-server-8.1.8.v20121106.jar"/>
+	<classpathentry kind="lib" path="libs/cling-support-2.0-alpha2.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
