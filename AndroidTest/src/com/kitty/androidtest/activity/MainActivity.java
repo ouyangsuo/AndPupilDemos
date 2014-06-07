@@ -1,5 +1,7 @@
 package com.kitty.androidtest.activity;
 
+import com.kitty.androidtest.fragmentanim.FAMainActivity;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +39,6 @@ public class MainActivity extends Activity{
 		lvMain=(ListView) findViewById(R.id.lv_main);
 	}
 	
-
 	private void initLvMain() {
 		lvMain.setAdapter(new lvMainAdapter());
 		lvMain.setOnItemClickListener(new OnItemClickListener() {
@@ -76,6 +77,10 @@ public class MainActivity extends Activity{
 					context.startActivity(new Intent(context, BrowserActivity.class));
 				}
 				
+				else if("Fragment«–ªª∂Øª≠".equals(demoNames[position])){
+					context.startActivity(new Intent(context, FAMainActivity.class));
+				}
+				
 			}
 		});
 	}
@@ -112,6 +117,7 @@ public class MainActivity extends Activity{
 				holder = (Holder) convertView.getTag();
 			}
 
+			holder.tvNum.setText(position+1+"");
 			holder.tvName.setText(demoNames[position]);
 			holder.tvDesc.setText(demoDescs[position]);
 
@@ -121,10 +127,12 @@ public class MainActivity extends Activity{
 	}
 	
 	class Holder {
+		private TextView tvNum;
 		private TextView tvName;
 		private TextView tvDesc;
 
 		public Holder(View convertView) {
+			tvNum = (TextView) convertView.findViewById(R.id.tvNum);
 			tvName = (TextView) convertView.findViewById(R.id.tv_name);
 			tvDesc = (TextView) convertView.findViewById(R.id.tv_desc);
 		}
