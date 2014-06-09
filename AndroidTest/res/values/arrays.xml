@@ -56,9 +56,11 @@
         <item>使用第三方类库：SlidingMenu</item>
         <item>使用第三方类库：DragSortListView</item>
         <item>使用第三方类库：ImageLoader</item>
+        <item>使用第三方类库：PullToRefresh</item>
         <item>物联网的开端：UPNP服务端示例</item>
         <item>物联网的开端：UPNP控制端示例</item>
         <item>Fragment切换动画</item>
+        <item>布局动画</item>
     </string-array>
     
     <string-array name="demo_descs">
@@ -68,9 +70,11 @@
         <item>经典的导航类库，本例实现了侧滑菜单和翻页导航</item>
         <item>牛逼的ListView升级版，实现了item的拖动排序和移除，并内置了多种配置选项</item>
         <item>批量异步加载图片的利器，并可配置淡入淡出效果，令你的各种列表流畅生动，牛逼闪闪</item>
+        <item>各种列表控件的通用下拉刷新</item>
         <item>服务端发布了灯泡设备和共享歌曲文件，局域网内的控制端可以搜索到该设备，控制其灯泡开关，并获取服务端其共享的歌曲，进行本地或远程播放</item>
         <item>搜索局域网内实现了UPNP通信接口的设备，并与其实现通信，本例可控制远程灯泡的开关，获取远程设备共享的歌曲，在本地或远程播放</item>
         <item>自定义Fragment切换及回退的动画效果</item>
+        <item>自定义ViewGroup在载入及移除childView时的动画效果</item>
     </string-array>
     
 </resources>

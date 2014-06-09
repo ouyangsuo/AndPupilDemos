@@ -1,6 +1,8 @@
 package com.kitty.androidtest.activity;
 
 import com.kitty.androidtest.fragmentanim.FAMainActivity;
+import com.kitty.androidtest.layoutanim.LAActivity;
+import com.kitty.androidtest.pull2refresh.PTRActivity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -69,6 +71,10 @@ public class MainActivity extends Activity{
 					context.startActivity(new Intent(context, ImageLoaderActivity.class));
 				}
 				
+				else if("使用第三方类库：PullToRefresh".equals(demoNames[position])){
+					context.startActivity(new Intent(context, PTRActivity.class));
+				}
+				
 				else if("物联网的开端：UPNP服务端示例".equals(demoNames[position])){
 					context.startActivity(new Intent(context, LightActivity.class));
 				}
@@ -79,6 +85,10 @@ public class MainActivity extends Activity{
 				
 				else if("Fragment切换动画".equals(demoNames[position])){
 					context.startActivity(new Intent(context, FAMainActivity.class));
+				}
+				
+				else if("布局动画".equals(demoNames[position])){
+					context.startActivity(new Intent(context, LAActivity.class));
 				}
 				
 			}

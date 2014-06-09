@@ -58,6 +58,16 @@
             android:name="com.kitty.androidtest.fragmentanim.FAMainActivity"
             android:label="@string/app_name" />
         
+        <!-- 布局动画 -->
+        <activity
+            android:name="com.kitty.androidtest.layoutanim.LAActivity"
+            android:label="@string/app_name" />
+        
+        <!-- 下拉刷新 -->
+        <activity
+            android:name="com.kitty.androidtest.pull2refresh.PTRActivity"
+            android:label="@string/app_name" />
+        
         <activity
             android:name="com.kitty.androidtest.activity.MainActivity"
             android:label="@string/app_name" >
