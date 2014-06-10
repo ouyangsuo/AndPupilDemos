@@ -8,11 +8,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.kitty.androidtest.dslv.DSLVFragment;
-import com.kitty.androidtest.dslv.DSLVFragmentClicks;
-import com.kitty.androidtest.dslv.DragInitModeDialog;
-import com.kitty.androidtest.dslv.EnablesDialog;
-import com.kitty.androidtest.dslv.RemoveModeDialog;
+import com.kitty.androidtest.dragsortlistview.DSLVFragment;
+import com.kitty.androidtest.dragsortlistview.DSLVFragmentClicks;
+import com.kitty.androidtest.dragsortlistview.DragInitModeDialog;
+import com.kitty.androidtest.dragsortlistview.EnablesDialog;
+import com.kitty.androidtest.dragsortlistview.RemoveModeDialog;
 import com.mobeta.android.dslv.DragSortController;
 import com.mobeta.android.dslv.DragSortListView;
 

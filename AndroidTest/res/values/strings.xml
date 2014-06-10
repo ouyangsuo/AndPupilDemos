@@ -4,7 +4,6 @@
     <string name="app_name">AndPupilDemos</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    
     <string name="tv_top_center">新鲜事</string>
     <string name="tv_voice">录语音</string>
     <string name="tv_statues">发状态</string>
@@ -15,7 +14,6 @@
     <string name="left_bottom_recommend">推荐应用</string>
     <string name="left_bottom_app">我的应用</string>
     <string name="left_bottom_setting">操作</string>
-
     <string name="properties">SlidingMenu Properties</string>
     <string name="general">General</string>
     <string name="viewpager">ViewPager</string>
@@ -69,10 +67,7 @@
 		either express or implied. See the License for the specific 
 		language governing permissions and limitations under the License.</string>
     <string name="no_email">Sorry, I couldn\'t find any e-mail apps on your phone</string>
-    
-    
-    
-    
+
     <!-- sdlv -->
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
@@ -81,45 +76,40 @@
     <string name="select_enables">Enable/Disable</string>
     <string name="add_header">Add header</string>
     <string name="add_footer">Add footer</string>
-    
-        <string-array name="remove_mode_labels">
-      <item>Click remove</item>
-      <item>Fling remove</item>
+
+    <string-array name="remove_mode_labels">
+        <item>Click remove</item>
+        <item>Fling remove</item>
     </string-array>
-    
     <string-array name="drag_init_mode_labels">
-      <item>On down</item>
-      <item>On drag</item>
-      <item>On long press</item>
+        <item>On down</item>
+        <item>On drag</item>
+        <item>On long press</item>
     </string-array>
-    
     <string-array name="enables_labels">
-      <item>Enable drag</item>
-      <item>Enable sort</item>
-      <item>Enable remove</item>
+        <item>Enable drag</item>
+        <item>Enable sort</item>
+        <item>Enable remove</item>
     </string-array>
-    
     <string-array name="jazz_artist_names">
-      <item>Brad Mehldau</item>
-      <item>Joshua Redman</item>
-      <item>Chick Corea</item>
-      <item>Kurt Rosenwinkel</item>
-      <item>Miles Davis</item>
-      <item>Wayne Shorter</item>
-      <item>Michael Brecker</item>
-      <item>Herbie Hancock</item>
-      <item>Joe Zawinul</item>
-      <item>Brian Blade</item>
-      <item>Jeff Ballard</item>
-      <item>Larry Grenadier</item>
-      <item>Keith Jarrett</item>
-      <item>McCoy Tyner</item>
-      <item>Stephon Harris</item>
-      <item>Mark Turner</item>
+        <item>Brad Mehldau</item>
+        <item>Joshua Redman</item>
+        <item>Chick Corea</item>
+        <item>Kurt Rosenwinkel</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
     </string-array>
-    
-    
-    
+
     <!-- ImageLoaderDemo -->
     <!-- Activity titles -->
     <string name="ac_name_image_list">Image List Example</string>
@@ -138,8 +128,7 @@
     <string name="button_image_gallery">Gallery</string>
     <!-- Content descriptions -->
     <string name="descr_image">Image</string>
-    
-    
+
     <!-- upnp light -->
     <string name="switchRouter">Network On/Off</string>
     <string name="toggleDebugLogging">Toggle debug logging</string>
@@ -150,8 +139,7 @@
     <string name="disablingDebugLogging">Disabling debug logging...</string>
     <string name="registeringDevice">Registering UPnP BinaryLight device...</string>
     <string name="createDeviceFailed">Creating of BinaryLight failed, check the log!</string>
-    
-    
+
     <!-- upnp browser -->
     <string name="deviceDetails">Device Details</string>
     <string name="searchLAN">Search LAN</string>
@@ -166,5 +154,10 @@
     <string name="disablingDebugLogging">Disabling debug logging...</string>
     <string name="deviceDetailsNotYetAvailable">Device details are being discovered, please wait.</string>
     <string name="remove_me">REMOVE ME</string>
+
+    <!-- appwidget -->
+    <string name="test">Click to send a broadcast</string>
+    <string name="send">Click me</string>
+    <string name="helloappwidget">HelloAppWidget</string>
 
 </resources>

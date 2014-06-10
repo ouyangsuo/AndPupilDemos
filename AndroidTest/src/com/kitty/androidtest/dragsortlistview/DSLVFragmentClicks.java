@@ -1,4 +1,4 @@
-package com.kitty.androidtest.dslv;
+package com.kitty.androidtest.dragsortlistview;
 
 import android.os.Bundle;
 import android.view.View;

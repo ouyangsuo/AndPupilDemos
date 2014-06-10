@@ -1,4 +1,4 @@
-package com.kitty.androidtest.dslv;
+package com.kitty.androidtest.dragsortlistview;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

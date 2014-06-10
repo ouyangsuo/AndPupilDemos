@@ -1,9 +1,5 @@
 package com.kitty.androidtest.activity;
 
-import com.kitty.androidtest.fragmentanim.FAMainActivity;
-import com.kitty.androidtest.layoutanim.LAActivity;
-import com.kitty.androidtest.pull2refresh.PTRActivity;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +12,11 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.kitty.androidtest.appwidgetdemo.AppWidgetActivity;
+import com.kitty.androidtest.fragmentanim.FAMainActivity;
+import com.kitty.androidtest.layoutanim.LAActivity;
+import com.kitty.androidtest.pull2refresh.PTRActivity;
 
 public class MainActivity extends Activity{
 
@@ -89,6 +90,10 @@ public class MainActivity extends Activity{
 				
 				else if("布局动画".equals(demoNames[position])){
 					context.startActivity(new Intent(context, LAActivity.class));
+				}
+				
+				else if("桌面部件AppWidget".equals(demoNames[position])){
+					context.startActivity(new Intent(context, AppWidgetActivity.class));
 				}
 				
 			}

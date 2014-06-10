@@ -1,4 +1,4 @@
-package com.kitty.androidtest.dslv;
+package com.kitty.androidtest.dragsortlistview;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -7,34 +7,34 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 
 import com.kitty.androidtest.activity.R;
-import com.mobeta.android.dslv.DragSortController;
 
-/**
- * Sets drag init mode on DSLV controller passed into ctor.
- */
-public class DragInitModeDialog extends DialogFragment {
+public class EnablesDialog extends DialogFragment {
 
-    private DragSortController mControl;
+    private boolean[] mEnabled;
 
-    private int mDragInitMode;
+    private EnabledOkListener mListener;
 
-    private DragOkListener mListener;
-
-    public DragInitModeDialog() {
+    public EnablesDialog() {
         super();
-        mDragInitMode = DragSortController.ON_DOWN;
+        mEnabled = new boolean[3];
+        mEnabled[0] = true;
+        mEnabled[1] = true;
+        mEnabled[2] = false;
     }
 
-    public DragInitModeDialog(int dragStartMode) {
+    public EnablesDialog(boolean drag, boolean sort, boolean remove) {
         super();
-        mDragInitMode = dragStartMode;
+        mEnabled = new boolean[3];
+        mEnabled[0] = drag;
+        mEnabled[1] = sort;
+        mEnabled[2] = remove;
     }
 
-    public interface DragOkListener {
-        public void onDragOkClick(int removeMode);
+    public interface EnabledOkListener {
+        public void onEnabledOkClick(boolean drag, boolean sort, boolean remove);
     }
 
-    public void setDragOkListener(DragOkListener l) {
+    public void setEnabledOkListener(EnabledOkListener l) {
         mListener = l;
     }
 
@@ -43,11 +43,11 @@ public class DragInitModeDialog extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // Set the dialog title
         builder.setTitle(R.string.select_remove_mode)
-                .setSingleChoiceItems(R.array.drag_init_mode_labels, mDragInitMode,
-                        new DialogInterface.OnClickListener() {
+                .setMultiChoiceItems(R.array.enables_labels, mEnabled,
+                        new DialogInterface.OnMultiChoiceClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                mDragInitMode = which;
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                                mEnabled[which] = isChecked;
                             }
                         })
                 // Set the action buttons
@@ -55,7 +55,7 @@ public class DragInitModeDialog extends DialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         if (mListener != null) {
-                            mListener.onDragOkClick(mDragInitMode);
+                            mListener.onEnabledOkClick(mEnabled[0], mEnabled[1], mEnabled[2]);
                         }
                     }
                 })

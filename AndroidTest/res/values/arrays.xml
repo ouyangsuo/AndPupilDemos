@@ -61,6 +61,7 @@
         <item>物联网的开端：UPNP控制端示例</item>
         <item>Fragment切换动画</item>
         <item>布局动画</item>
+        <item>桌面部件AppWidget</item>
     </string-array>
     
     <string-array name="demo_descs">
@@ -75,6 +76,7 @@
         <item>搜索局域网内实现了UPNP通信接口的设备，并与其实现通信，本例可控制远程灯泡的开关，获取远程设备共享的歌曲，在本地或远程播放</item>
         <item>自定义Fragment切换及回退的动画效果</item>
         <item>自定义ViewGroup在载入及移除childView时的动画效果</item>
+        <item>基于广播实现桌面部件与应用程序的交互，基于Service实现桌面部件的高频实时更新</item>
     </string-array>
     
 </resources>

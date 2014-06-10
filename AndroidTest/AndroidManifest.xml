@@ -9,74 +9,86 @@
         android:targetSdkVersion="14" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/ActivityTheme">
-        
+        android:theme="@style/ActivityTheme" >
         <activity
             android:name="com.kitty.androidtest.activity.ThreadTestActivity"
             android:label="@string/app_name" >
         </activity>
-        
         <activity
             android:name="com.kitty.androidtest.activity.LvTestActivity"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.GoneWhileClickActivity"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.GetResolutionActivity"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.WeiBoActivity"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.FragmentChangeActivity"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.TestBedDSLV"
             android:label="@string/app_name" />
-        
         <activity
             android:name="com.kitty.androidtest.activity.ImageLoaderActivity"
             android:label="@string/app_name" />
-        
+
         <!-- fragment切换动画 -->
         <activity
             android:name="com.kitty.androidtest.fragmentanim.FAMainActivity"
             android:label="@string/app_name" />
-        
+
         <!-- 布局动画 -->
         <activity
             android:name="com.kitty.androidtest.layoutanim.LAActivity"
             android:label="@string/app_name" />
-        
+
         <!-- 下拉刷新 -->
         <activity
             android:name="com.kitty.androidtest.pull2refresh.PTRActivity"
             android:label="@string/app_name" />
-        
+
+        <!-- appwidget -->
+        <activity
+            android:name="com.kitty.androidtest.appwidgetdemo.AppWidgetActivity"
+            android:label="@string/app_name" />
+
+        <receiver android:name="com.kitty.androidtest.appwidgetdemo.MyAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.kitty.appwidgetdemo.action.test" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget" />
+        </receiver>
+
+        <service android:name="com.kitty.androidtest.appwidgetdemo.UpdateService" />
+
+        <!-- main activity -->
         <activity
             android:name="com.kitty.androidtest.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <!-- ImageLoader Demo -->
         <activity
             android:name="com.kitty.androidtest.imageloaderdemo.ImageListActivity"
@@ -90,13 +102,13 @@
         <activity
             android:name="com.kitty.androidtest.imageloaderdemo.ImageGalleryActivity"
             android:label="@string/ac_name_image_gallery" />
-        
-        <!-- UPNP Demo-->
-        <activity android:name="com.kitty.androidtest.activity.BrowserActivity"/>
-        <activity android:name="com.kitty.androidtest.activity.LightActivity"/>
-        <activity android:name="com.kitty.androidtest.upnpclient.LightControllerActivity"/>
-        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl"/>
-                
+
+        <!-- UPNP Demo -->
+        <activity android:name="com.kitty.androidtest.activity.BrowserActivity" />
+        <activity android:name="com.kitty.androidtest.activity.LightActivity" />
+        <activity android:name="com.kitty.androidtest.upnpclient.LightControllerActivity" />
+
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl" />
     </application>
 
 </manifest>
